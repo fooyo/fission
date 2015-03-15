@@ -24,12 +24,12 @@ body {
     -webkit-transform: scale(0.7) translate(65px, -65px);
   }
   62% {
-    transform: scale(0.4) translate(65px, 65px);
+    transform: scale(0.4) translate(130px, 97.5px);
     -webkit-transform: scale(0.4) translate(130px, 97.5px);
   }
   94% {
-    transform: scale(0.4) translate(-65px, -65px);
-    -webkit-transform: scale(0.4) translate(-65px, -65px);
+    transform: scale(0.4) translate(-130px, -65px);
+    -webkit-transform: scale(0.4) translate(-130px, -65px);
   }
 }
 @-webkit-keyframes blob-right-top-anim {
@@ -46,8 +46,8 @@ body {
     -webkit-transform: scale(0.7) translate(65px, -65px);
   }
   96% {
-    transform: scale(0.7) translate(65px, -65px);
-    -webkit-transform: scale(0.7) translate(65px, -65px);
+    transform: scale(0.4) translate(65px, -65px);
+    -webkit-transform: scale(0.4) translate(65px, -65px);
   }
 }
 @-webkit-keyframes blob-left-bottom-anim {
@@ -64,8 +64,8 @@ body {
     -webkit-transform: scale(0.6) translate(-65px, 65px);
   }
   98% {
-    transform: scale(0.6) translate(-65px, 65px);
-    -webkit-transform: scale(0.6) translate(-65px, 65px);
+    transform: scale(0.4) translate(-65px, 65px);
+    -webkit-transform: scale(0.4) translate(-65px, 65px);
   }
 }
 @-webkit-keyframes blob-right-bottom-anim {
@@ -82,8 +82,8 @@ body {
     -webkit-transform: scale(1.1) translate(-65px, -65px);
   }
   100% {
-    transform: scale(0.4) translate(65px, 65px);
-    -webkit-transform: scale(0.4) translate(65px, 65px);
+    transform: scale(0.4) translate(130px, 130px);
+    -webkit-transform: scale(0.4) translate(130px, 130px);
   }
 }
 /* line 91, ../scss/style.scss */
