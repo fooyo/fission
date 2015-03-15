@@ -16,74 +16,74 @@ body {
 
 @-webkit-keyframes blob-left-top-anim {
   0% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(1.1) translate(0, 0);
-  }
-  33% {
-    transform: scale(1) translate(-65px, 0);
-    -webkit-transform: scale(1) translate(-65px, 0);
-  }
-  62% {
     transform: scale(1.1) translate(-65px, -65px);
     -webkit-transform: scale(1.1) translate(-65px, -65px);
   }
+  33% {
+    transform: scale(0.7) translate(65px, -65px);
+    -webkit-transform: scale(0.7) translate(65px, -65px);
+  }
+  62% {
+    transform: scale(0.4) translate(65px, 65px);
+    -webkit-transform: scale(0.4) translate(130px, 97.5px);
+  }
   94% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(1.1) translate(0, 0);
+    transform: scale(0.4) translate(-65px, -65px);
+    -webkit-transform: scale(0.4) translate(-65px, -65px);
   }
 }
 @-webkit-keyframes blob-right-top-anim {
   0% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(1.1) translate(0, 0);
+    transform: scale(0.7) translate(65px, -65px);
+    -webkit-transform: scale(0.7) translate(65px, -65px);
   }
   33% {
-    transform: scale(0.7) translate(65px, 0);
-    -webkit-transform: scale(0.7) translate(65px, 0);
+    transform: scale(0.6) translate(-65px, 65px);
+    -webkit-transform: scale(0.6) translate(-65px, 65px);
   }
   64% {
     transform: scale(0.7) translate(65px, -65px);
     -webkit-transform: scale(0.7) translate(65px, -65px);
   }
   96% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(0.7) translate(0, 0);
+    transform: scale(0.7) translate(65px, -65px);
+    -webkit-transform: scale(0.7) translate(65px, -65px);
   }
 }
 @-webkit-keyframes blob-left-bottom-anim {
   0% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(1.1) translate(0, 0);
+    transform: scale(0.6) translate(-65px, 65px);
+    -webkit-transform: scale(0.6) translate(-65px, 65px);
   }
   33% {
-    transform: scale(0.7) translate(-65px, 0);
-    -webkit-transform: scale(0.7) translate(-65px, 0);
+    transform: scale(0.6) translate(65px, -65px);
+    -webkit-transform: scale(0.6) translate(65px, 65px);
   }
   66% {
     transform: scale(0.6) translate(-65px, 65px);
     -webkit-transform: scale(0.6) translate(-65px, 65px);
   }
   98% {
-    transform: scale(1.1) translate(0, 0);
-    -webkit-transform: scale(1.1) translate(0, 0);
+    transform: scale(0.6) translate(-65px, 65px);
+    -webkit-transform: scale(0.6) translate(-65px, 65px);
   }
 }
 @-webkit-keyframes blob-right-bottom-anim {
   0% {
-    transform: scale(1.2) translate(0, 0);
-    -webkit-transform: scale(1.2) translate(0, 0);
-  }
-  33% {
-    transform: scale(0.6) translate(65px, 0);
-    -webkit-transform: scale(0.6) translate(65px, 0);
-  }
-  68% {
-    transform: scale(0.4) translate(65px, 65px);
+    transform: scale(0.4) translate(130px, 97.5px);
     -webkit-transform: scale(0.4) translate(130px, 97.5px);
   }
+  33% {
+    transform: scale(1.1) translate(-65px, -65px);
+    -webkit-transform: scale(1.1) translate(-65px, -65px);
+  }
+  68% {
+    transform: scale(1.1) translate(-65px, -65px);
+    -webkit-transform: scale(1.1) translate(-65px, -65px);
+  }
   100% {
-    transform: scale(1.2) translate(0, 0);
-    -webkit-transform: scale(1.2) translate(0, 0);
+    transform: scale(0.4) translate(65px, 65px);
+    -webkit-transform: scale(0.4) translate(65px, 65px);
   }
 }
 /* line 91, ../scss/style.scss */
@@ -96,36 +96,37 @@ body {
   margin-top: -50px;
   margin-left: -50px;
   border-radius: 100%;
-  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
-  -webkit-animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+  mix-blend-mode: multiply;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 5s infinite;
+  -webkit-animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 5s infinite;
 }
-/* line 102, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .blob.blob1 {
   background: #366695;
 }
-/* line 105, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .blob.blob2 {
   background: #47dccb;
 }
-/* line 108, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 .blob.blob3 {
   background: #40abb4;
 }
-/* line 111, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .blob.blob4 {
   background: #95f4e9;
 }
-/* line 114, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 .blob:nth-child(2) {
   -webkit-animation-name: blob-right-top-anim;
   animation-name: blob-right-top-anim;
 }
-/* line 118, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .blob:nth-child(3) {
   -webkit-animation-name: blob-left-bottom-anim;
   animation-name: blob-left-bottom-anim;
 }
-/* line 122, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .blob:nth-child(4) {
   -webkit-animation-name: blob-right-bottom-anim;
   animation-name: blob-right-bottom-anim;
