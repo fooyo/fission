@@ -4,8 +4,11 @@ body{
   background:white;
 }
 .blobs{
-  filter:url('#goo');
-  -webkit-filter:url('#goo');
+  filter:url("blur.svg#goo");
+  -webkit-filter:url('blur.svg#goo');
+  -moz-filter:url('blur.svg#goo');
+  -o-filter:url('blur.svg#goo');
+  -ms-filter:url('blur.svg#goo');
   position:absolute;
   top:0;
   left:0;
@@ -14,9 +17,13 @@ body{
 }
 $dist-x:65px;
 $dist-y:65px;
-
+$dist-memx:250px;
+$dist-memy:250px;
 @-webkit-keyframes blob-left-top-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     -webkit-transform:scale(1.1) translate(-$dist-x,-$dist-y);
   }
   33%{
@@ -31,6 +38,9 @@ $dist-y:65px;
 }
 @keyframes blob-left-top-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     transform:scale(1.1) translate(-$dist-x,-$dist-y);
   }
   33%{
@@ -45,6 +55,9 @@ $dist-y:65px;
 }
 @-webkit-keyframes blob-right-top-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     -webkit-transform:scale(0.7) translate($dist-x,-$dist-y);
   }
   33%{
@@ -59,6 +72,9 @@ $dist-y:65px;
 }
 @keyframes blob-right-top-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     transform:scale(0.7) translate($dist-x,-$dist-y);
   }
   33%{
@@ -73,6 +89,9 @@ $dist-y:65px;
 }
 @-webkit-keyframes blob-left-bottom-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     -webkit-transform:scale(0.6) translate(-$dist-x,$dist-y);
   }
   33%{
@@ -81,12 +100,15 @@ $dist-y:65px;
   66%{
     -webkit-transform:scale(0.6) translate(-$dist-x,$dist-y);
   }
-  98%{
+  78%{
     -webkit-transform:scale(0.4) translate(-$dist-x,$dist-y);
   }
 }
 @keyframes blob-left-bottom-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     transform:scale(0.6) translate(-$dist-x,$dist-y);
   }
   33%{
@@ -95,12 +117,15 @@ $dist-y:65px;
   66%{
     transform:scale(0.6) translate(-$dist-x,$dist-y);
   }
-  98%{
+  78%{
     transform:scale(0.4) translate(-$dist-x,$dist-y);
   }
 }
 @-webkit-keyframes blob-right-bottom-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     -webkit-transform:scale(0.4) translate(2*$dist-x,1.5*$dist-y);
   }
   33%{
@@ -109,12 +134,15 @@ $dist-y:65px;
   68%{
     -webkit-transform:scale(1.1) translate(-$dist-x,-$dist-y);
   }
-  100%{
+  80%{
     -webkit-transform:scale(0.4) translate(2*$dist-x,2*$dist-y);
   }
 }
 @keyframes blob-right-bottom-anim{
   0%{
+    -webkit-transform:scale(1) translate(0,0);
+  }
+  10%{
     transform:scale(0.4) translate(2*$dist-x,1.5*$dist-y);
   }
   33%{
@@ -123,7 +151,7 @@ $dist-y:65px;
   68%{
     transform:scale(1.1) translate(-$dist-x,-$dist-y);
   }
-  100%{
+  80%{
     transform:scale(0.4) translate(2*$dist-x,2*$dist-y);
   }
 }
@@ -137,8 +165,8 @@ $dist-y:65px;
   margin-left:-50px;
   border-radius:100%;
   mix-blend-mode: multiply;
-  animation:blob-left-top-anim cubic-bezier(0.770, 0.000, 0.175, 1.000) 5s infinite;
-  -webkit-animation:blob-left-top-anim cubic-bezier(0.770, 0.000, 0.175, 1.000) 5s infinite;
+  animation:blob-left-top-anim cubic-bezier(0.770, 0.000, 0.175, 1.000) 10s infinite;
+  -webkit-animation:blob-left-top-anim cubic-bezier(0.770, 0.000, 0.175, 1.000) 10s infinite;
   &.blob1{
     background:#366695;
   }

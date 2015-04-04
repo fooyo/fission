@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Fission</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div class="blobs">
-  <div class="blob blob1"></div>
-  <div class="blob blob2"></div>
-  <div class="blob blob3"></div>
-  <div class="blob blob4"></div>
-</div>
-
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <filter id="goo">
@@ -23,5 +7,3 @@
     </filter>
   </defs>
 </svg>
-</body>
-</html>
