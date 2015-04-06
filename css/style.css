@@ -1,15 +1,15 @@
-/* line 3, ../scss/style.scss */
+/* line 1, ../scss/style.scss */
 body {
   background: white;
 }
 
-/* line 6, ../scss/style.scss */
+/* line 4, ../scss/style.scss */
 .blobs {
   filter: url("blur.svg#goo");
-  -webkit-filter: url("blur.svg#goo");
-  -moz-filter: url("blur.svg#goo");
-  -o-filter: url("blur.svg#goo");
-  -ms-filter: url("blur.svg#goo");
+  -webkit-filter: url("#goo");
+  -moz-filter: url("#goo");
+  -o-filter: url("#goo");
+  -ms-filter: url("#goo");
   position: absolute;
   top: 0;
   left: 0;
@@ -153,7 +153,7 @@ body {
     transform: scale(0.4) translate(130px, 130px);
   }
 }
-/* line 158, ../scss/style.scss */
+/* line 156, ../scss/style.scss */
 .blob {
   position: absolute;
   left: 50%;
@@ -167,33 +167,33 @@ body {
   animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 10s infinite;
   -webkit-animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 10s infinite;
 }
-/* line 170, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .blob.blob1 {
   background: #366695;
 }
-/* line 173, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .blob.blob2 {
   background: #47dccb;
 }
-/* line 176, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .blob.blob3 {
   background: #40abb4;
 }
-/* line 179, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .blob.blob4 {
   background: #95f4e9;
 }
-/* line 182, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .blob:nth-child(2) {
   -webkit-animation-name: blob-right-top-anim;
   animation-name: blob-right-top-anim;
 }
-/* line 186, ../scss/style.scss */
+/* line 184, ../scss/style.scss */
 .blob:nth-child(3) {
   -webkit-animation-name: blob-left-bottom-anim;
   animation-name: blob-left-bottom-anim;
 }
-/* line 190, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .blob:nth-child(4) {
   -webkit-animation-name: blob-right-bottom-anim;
   animation-name: blob-right-bottom-anim;

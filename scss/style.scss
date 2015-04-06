@@ -1,14 +1,12 @@
-@import "compass/css3";
-
 body{
   background:white;
 }
 .blobs{
   filter:url("blur.svg#goo");
-  -webkit-filter:url('blur.svg#goo');
-  -moz-filter:url('blur.svg#goo');
-  -o-filter:url('blur.svg#goo');
-  -ms-filter:url('blur.svg#goo');
+  -webkit-filter:url('#goo');
+  -moz-filter:url('#goo');
+  -o-filter:url('#goo');
+  -ms-filter:url('#goo');
   position:absolute;
   top:0;
   left:0;
