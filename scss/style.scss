@@ -110,7 +110,7 @@ $dist-memy:250px;
     transform:scale(0.6) translate(-$dist-x,$dist-y);
   }
   33%{
-    transform:scale(0.6) translate($dist-x,-$dist-y);
+    transform:scale(0.6) translate($dist-x,$dist-y);
   }
   66%{
     transform:scale(0.6) translate(-$dist-x,$dist-y);
